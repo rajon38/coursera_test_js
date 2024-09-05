@@ -1,0 +1,443 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed Navigation Bar */
+header nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Search Bar */
+header .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .search-bar input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+header .search-bar button {
+    padding: 8px 16px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Home Page Styles */
+.home-intro {
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/10/07/48/beach-2836300_640.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 10em 0;
+}
+
+.home-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.home-intro button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-intro button:hover {
+    background-color: #0056b3;
+}
+
+/* Recommendation Section */
+#recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+}
+
+.card-content p {
+    margin: 0;
+    color: #666;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Bar 
+.search-bar {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.search-bar input {
+    padding: 1em;
+    width: 300px;
+    font-size: 1em;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    width: 350px;
+}
+
+.search-bar button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}*/
+
+/* About Us Section */
+.about-us {
+    padding: 100px 50px;
+    text-align: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chittagong_Port.jpg/1200px-Chittagong_Port.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-cardd {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.team-cardd img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.team-cardd h3 {
+    color: rgb(22, 21, 21);
+}
+
+.team-cardd p {
+    color: rgb(22, 21, 21);
+}
+
+.team-cardd:hover {
+    transform: scale(1.05);
+}
+
+/* Company History */
+.company-history {
+    padding: 50px;
+}
+
+.company-history h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.company-history p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+    color: white;
+    background-image: url('https://i.pinimg.com/736x/30/79/3f/30793f37ea253b057e0320a5e08a7f94.jpg')
+  }
+  
+  .contact-left {
+    flex: 1;
+  }
+  
+  .contact-left h1 {
+    font-size: 3rem;
+  }
+  
+  .contact-left p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+  }
+  
+  /* Contact Form Styling */
+.contact-right {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-right textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-right button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-right button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-right {
+        padding: 15px;
+    }
+
+    .contact-right button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* Thank You Popup */
+.thank-you {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+    width: 300px;
+}
+
+.thank-you h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.thank-you p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.2em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .home-intro h1 {
+        font-size: 2.5em;
+    }
+
+    .home-intro p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .home-intro h1 {
+        font-size: 2em;
+    }
+
+    .home-intro p {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
+    .contact-right {
+        padding: 15px;
+    }
+}

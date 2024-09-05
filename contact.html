@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TravelBloom</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <!-- Fixed Navigation Bar -->
+        <nav>
+            <div class="logo">TravelBloom</div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Us Section -->
+    <section class="contact-us" id="./contact">
+        <div class="contact-left">
+            <h1>CONTACT US</h1>
+            <p>Get in touch</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Thank You Message -->
+    <div id="thankYouMessage" class="thank-you">
+        <h2>Thank you for reaching out!</h2>
+        <p>We'll get back to you shortly.</p>
+    </div>
+
+    <!-- Include footer -->
+    <footer>
+        <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+    </footer>
+
+    <script src="./script1.js"></script>
+</body>
+</html>
